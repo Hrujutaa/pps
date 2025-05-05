@@ -1,0 +1,12 @@
+from datetime import datetime,timedelta
+try:
+	year=int(input("year: "))
+	mon=int(input("month: "))
+	day=int(input("day: "))
+	input_data=datetime(year,mon,day)
+	print("valid")
+	next_day=input_data + timedelta(days=1)
+	print(f"incremented date: {next_day.date()}")
+
+except:
+	print("invalid")
